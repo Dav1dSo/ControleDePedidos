@@ -1,24 +1,18 @@
 @extends('layouts.main')
 
-@section('navbar')
-<div class=" bg-dark text-white d-flex flex-row-reverse bd-highlight">
-  <div id="display-font" class="p-3 bd-highlight">
-  <a class="dropdown-item" href="/createPedido">Criar pedidos</a>
-  </div>
-  <div id="display-font" class="p-3 bd-highlight">Ver pedidos</div>
-  <li type="none" id="display-font" class="p-3 nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtrar pedidos</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Últimos 6 meses</a>
-        <a class="dropdown-item" href="#">Pedidos com observação</a>
-        <a class="dropdown-item" href="#">Pedidos abertos</a>
-        <a class="dropdown-item" href="#">Pedidos fechados</a>
-      </div>
-  </li>
-</div>
-@endsection
-
 @section('createpedido')
+
+@section('errorMensages')
+  @if($errors->any())
+    <div  class="mb-3 w-50 mx-auto alert alert-danger" role="alert">
+      <ul>
+          @foreach($errors->all() as $error)
+              <li> {{ $error }} </li>
+          @endforeach
+      </ul>
+    </div>
+  @endif
+@endsection
 
 <div class="container">
     <div class="row">
@@ -37,7 +31,7 @@
             </div>
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputTelefone1" class="form-label">Telefone</label>
-              <input name="telefone" type="number" class="form-control" id="exampleInputNumber1">
+              <input name="telefone" type="number" class="form-control" id="inputTelefone1">
             </div>
             
             <div class="form-row " id="endereco">

@@ -28,11 +28,29 @@
             margin-top: 40px;
         }
 
+        
+
     </style>
 <body>
 
-    @yield('navbar')
+    <div class=" bg-dark text-white d-flex flex-row-reverse bd-highlight">
+    <div id="display-font" class="p-3 bd-highlight">
+    <a class="dropdown-item" href="/createPedido">Criar pedidos</a>
+    </div>
+    <div id="display-font" class="p-3 bd-highlight"><a class="dropdown-item" href="/showPedidos">Ver pedidos</a></div>
+    <li type="none" id="display-font" class="p-3 nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtrar pedidos</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Últimos 6 meses</a>
+            <a class="dropdown-item" href="#">Pedidos com observação</a>
+            <a class="dropdown-item" href="#">Pedidos abertos</a>
+            <a class="dropdown-item" href="#">Pedidos fechados</a>
+        </div>
+    </li>
+    </div>
     
+    @yield('errorMensages')
+
     <main>
         @if(session('msg'))   
             <div class="mb-3 w-50 mx-auto alert alert-success" role="alert">
@@ -43,6 +61,7 @@
 
     @yield('welcome')
     @yield('createpedido')
+    @yield('showPedidos')
 
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
