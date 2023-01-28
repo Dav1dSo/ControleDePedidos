@@ -52,8 +52,9 @@
                 <div class="form-group col-md-1">
                   <label for="inputEstado">UF:</label>
                   <select name="estado" id="inputEstado" class="form-control">
-                    <option>JP</option>
+                    <option>PB</option>
                     <option>PE</option>
+                    <option>RN</option>
                     <option>DF</option>
                     <option>SP</option>
                     <option>SC</option>

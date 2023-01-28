@@ -29,6 +29,6 @@ class RegisterPedidoController extends Controller
         $pedido->save();
 
         //redieciona usuário
-        return redirect('/');
+        return redirect('/')->with('msg', 'Pedido cadastrado com sucesso!');
     }
 }
