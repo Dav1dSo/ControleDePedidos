@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\FormValidatorRequest;
 
 use App\Models\Pedidos;
 
 class RegisterPedidoController extends Controller
 {
-    public function registerPedido(Request $request) {
+    public function registerPedido(FormValidatorRequest $request) {
         
         $pedido = new Pedidos;
+        
 
         //captura dos dados do formulario
         $pedido->nome = $request->nome;
