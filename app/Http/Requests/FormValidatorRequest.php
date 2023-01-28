@@ -41,7 +41,7 @@ class FormValidatorRequest extends FormRequest
     {
         return [
             'nome.required' => 'O campo nome é obrigatório!',
-            'telefone.required' => 'O telefone deve conter código de área e prefixo 9!',
+            'telefone.required' => 'O telefone deve conter prefixo 9!',
             'rua.required' => 'Digite um nome de rua válido!',
             'cidade.required' => 'Digite um nome de cidade válido!',
             'estado.required' => 'Selecione o estado!',

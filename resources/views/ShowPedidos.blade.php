@@ -9,6 +9,10 @@
   </div> 
 @endsection
 
+<div class=" col-lg-6 my-4 mx-auto alert alert-info" role="alert">
+    Foram encontrados {{ $quantidade }} registros!
+</div>
+
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">
         <tr>
@@ -45,9 +49,5 @@
   </tbody>
   @endforeach
 </table>
-
-<div class=" col-lg-6 my-4 mx-auto alert alert-info" role="alert">
-    Foram encontrados {{ $quantidade }} registros!
-</div>
 
 @endsection 

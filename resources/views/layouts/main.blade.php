@@ -9,14 +9,14 @@
 </head>
     <style>
         #display-font {
-            font-size: 22px;
+            font-size: 20px;
             color: white;
         }
         #display-font:hover{
             box-shadow: 2px 2px 20px 1px #696969;
             border-radius: 15px;
             border: none;
-            font-size: 22.2px;
+            font-size: 20.2px;
         }
 
         #endereco {
@@ -28,9 +28,16 @@
             margin-top: 40px;
         }
 
-        
+        #table{
+            width: 85vw;
+            margin: auto;
+        }
 
-    </style>
+        #table th {
+            background-color: #1C1C1C;
+            color: white; 
+        }
+</style>
 <body>
 
     <div class=" bg-dark text-white d-flex flex-row-reverse bd-highlight">
