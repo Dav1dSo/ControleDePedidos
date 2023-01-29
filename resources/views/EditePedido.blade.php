@@ -23,8 +23,9 @@
             <p class="text-center lead">Edite seu pedido a baixo!</p>
         </div> 
 
-        <form action="/registerPedido" method="POST">
+        <form action="/updatePedido/{{ $pedido->id }}" method="POST">
           @csrf
+          @method('PUT')
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputNome1" class="form-label">Nome</label>
               <input name="nome" type="text" class="form-control" id="exampleInputText1" aria-describedby="TextHelp" placeholder=" {{ $pedido->nome }} " >   
@@ -92,7 +93,7 @@
             </div>
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputDate" class="form-label">Data do pedido</label>
-              <input name="data_pedido" type="date" class="form-control" id="exampleInputDate1" placeholder="{{ $pedido->data_pedido }}" >
+              <input name="data_pedido" type="date" class="form-control" id="exampleInputDate1" value="{{ $pedido->data_pedido }}">
             </div>
             <div class="md-3 w-50 mx-auto">
                 <label for="exampleInputStatus" class="form-label">Status</label>
