@@ -45,7 +45,7 @@
         }    
 
         #btnactions a{
-            margin-left: 8px;
+            margin-right: 7px;
         }
         #errorMessage {
             margin-top: 5vh;

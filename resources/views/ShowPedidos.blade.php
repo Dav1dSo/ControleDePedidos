@@ -47,14 +47,13 @@
       <td> {{$pedido->status}} </td>
       <td> {{$pedido->observacao}} </td>
       <td id="btnactions"> 
-        <form action="">
-          <a href="/editPedido{id}">Editar</a> 
-        </form> 
+          <a class="btn btn-primary" href="/editePedido/{{ $pedido->id }}">Editar</a> 
         <form action="/deletePedido/{{ $pedido->id }}" method="POST">
           @csrf
           @method('DELETE')
           <button type="submit" class="btn btn-danger" >Deletar</button>
         </form>
+      </td>
     </tr>
   </tbody>
   @endforeach
