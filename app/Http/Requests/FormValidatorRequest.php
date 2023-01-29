@@ -24,10 +24,10 @@ class FormValidatorRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required||max:110|min:5',
+            'nome' => 'required||max:110|min:3',
             'telefone' => 'required||max:11|min:9',
             'rua' => 'required||max:110|min:5',
-            'cidade' => 'required||max:110|min:5',
+            'cidade' => 'required||max:110|min:3',
             'estado' => 'required',
             'numero' => 'required||max:5|min:1',
             'bairro' => 'required||max:110|min:3',

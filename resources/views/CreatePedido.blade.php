@@ -46,14 +46,33 @@
                 <div class="form-group col-md-1">
                   <label for="inputEstado">UF:</label>
                   <select name="estado" id="inputEstado" class="form-control">
-                    <option>PB</option>
-                    <option>PE</option>
-                    <option>RN</option>
-                    <option>DF</option>
-                    <option>SP</option>
-                    <option>SC</option>
-                    <option>MS</option>
-                    <option>AM</option>
+                    <option value="AC" >AC</option>
+                    <option value="AL" >AL</option>
+                    <option value="AP" >AP</option>
+                    <option value="AM" >AM</option>
+                    <option value="BA" >BA</option>
+                    <option value="CE" >CE</option>
+                    <option value="DF" >DF</option>
+                    <option value="ES" >ES</option>
+                    <option value="GO" >GO</option>
+                    <option value="MA" >MA</option>
+                    <option value="MT" >MT</option>
+                    <option value="MS" >MS</option>
+                    <option value="MG" >MG</option>
+                    <option value="PA" >PA</option>
+                    <option value="PB" >PB</option>
+                    <option value="PR" >PR</option>
+                    <option value="PE" >PE</option>
+                    <option value="PI" >PI</option>
+                    <option value="RJ" >RJ</option>
+                    <option value="RN" >RN</option>
+                    <option value="RS" >RS</option>
+                    <option value="RO" >RO</option>
+                    <option value="RR" >RR</option>
+                    <option value="SC" >SC</option>
+                    <option value="SP" >SP</option>
+                    <option value="SE" >SE</option>
+                    <option value="TO" >TO</option>
                   </select>
                 </div>
                 <div class="form-group col-md-1 ">
@@ -78,8 +97,8 @@
             <div class="md-3 w-50 mx-auto">
                 <label for="exampleInputStatus" class="form-label">Status</label>
                 <select name="status" class="md-3 w-51 form-select" aria-label="Default select example">
-                    <option value="0">Fechado</option>
-                    <option value="1">Aberto</option>
+                    <option value="Fechado">Fechado</option>
+                    <option value="Aberto">Aberto</option>
                 </select>
             </div>
             <div class="md-3 m-4 w-50 mx-auto" >
