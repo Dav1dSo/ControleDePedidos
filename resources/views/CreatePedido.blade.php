@@ -87,7 +87,7 @@
               </div>
 
             <div class="mb-3 w-50 mx-auto">
-              <label for="exampleInputValor" class="form-label">Valor</label>
+              <label for="exampleInputValor" class="form-label">Valor R$</label>
               <input placeholder="R$:" name="valor" type="number" class="form-control" id="exampleInputNumber1">
             </div>
             <div class="mb-3 w-50 mx-auto">

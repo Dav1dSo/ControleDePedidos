@@ -28,25 +28,25 @@
           @method('PUT')
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputNome1" class="form-label">Nome</label>
-              <input name="nome" type="text" class="form-control" id="exampleInputText1" aria-describedby="TextHelp" placeholder=" {{ $pedido->nome }} " >   
+              <input name="nome" type="text" class="form-control" id="exampleInputText1" aria-describedby="TextHelp" value=" {{ $pedido->nome }} " >   
             </div>
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputTelefone1" class="form-label">Telefone</label>
-              <input name="telefone" type="number" class="form-control" id="inputTelefone1" placeholder="{{ $pedido->telefone }}" >
+              <input name="telefone" type="number" class="form-control" id="inputTelefone1" value="{{ $pedido->telefone }}" >
             </div>
             
             <div class="form-row " id="endereco">
                 <div class="form-group col-md-2 ">
                   <label for="inputRua">Rua:</label>
-                  <input name="rua" type="text" class="form-control" id="inputRua" placeholder="{{ $pedido->rua }}" >
+                  <input name="rua" type="text" class="form-control" id="inputRua" value="{{ $pedido->rua }}" >
                 </div>
                 <div class="form-group col-md-2 ">
                   <label for="inputCity">Cidade:</label>
-                  <input name="cidade" type="text" class="form-control" id="inputCity" placeholder="{{ $pedido->cidade }}" >
+                  <input name="cidade" type="text" class="form-control" id="inputCity" value="{{ $pedido->cidade }}" >
                 </div>
                 <div class="form-group col-md-1">
                   <label for="inputEstado">UF:</label>
-                  <select name="estado" id="inputEstado" class="form-control" placeholder="{{ $pedido->estado }}" >
+                  <select name="estado" id="inputEstado" class="form-control" value="{{ $pedido->estado }}" >
                     <option value="AC" >AC</option>
                     <option value="AL" >AL</option>
                     <option value="AP" >AP</option>
@@ -78,18 +78,18 @@
                 </div>
                 <div class="form-group col-md-1 ">
                   <label for="inputNumber">Número:</label>
-                  <input name="numero" type="number" class="form-control" id="inputNumber" placeholder="{{ $pedido->numero }}" >
+                  <input name="numero" type="number" class="form-control" id="inputNumber" value="{{ $pedido->numero }}">
                 </div>
             </div>
 
             <div class=" mb-3 w-50 mx-auto form-group col-md-2 ">
                 <label for="inputCity">Bairro:</label>
-                <input name="bairro" type="text" class="form-control" id="inputBairro" placeholder="{{ $pedido->bairro }}" >
+                <input name="bairro" type="text" class="form-control" id="inputBairro" value="{{ $pedido->bairro }}" >
               </div>
 
             <div class="mb-3 w-50 mx-auto">
-              <label for="exampleInputValor" class="form-label">Valor</label>
-              <input  name="valor" type="number" class="form-control" id="exampleInputNumber1" placeholder="R$ {{ $pedido->valor }}" >
+              <label for="exampleInputValor" class="form-label">Valor R$</label>
+              <input  name="valor" type="number" class="form-control" id="exampleInputNumber1" value="{{ $pedido->valor }}">
             </div>
             <div class="mb-3 w-50 mx-auto">
               <label for="exampleInputDate" class="form-label">Data do pedido</label>
@@ -97,13 +97,13 @@
             </div>
             <div class="md-3 w-50 mx-auto">
                 <label for="exampleInputStatus" class="form-label">Status</label>
-                <select name="status" class="md-3 w-51 form-select" aria-label="Default select example" placeholder="{{ $pedido->status }}" >
+                <select name="status" class="md-3 w-51 form-select" aria-label="Default select example" value="{{ $pedido->status }}">
                     <option value="Fechado">Fechado</option>
                     <option value="Aberto">Aberto</option>
                 </select>
             </div>
             <div class="md-3 m-4 w-50 mx-auto" >
-              <textarea name="observacao" class="form-control" placeholder="{{ $pedido->observacao }}" ></textarea>
+              <textarea name="observacao" class="form-control">{{ $pedido->observacao }}</textarea>
             </div>
             <div class="m-4 d-grid gap-2 col-1 mx-auto">
                 <input type="submit" class="btn btn-primary" type="button"> 

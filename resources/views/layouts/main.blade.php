@@ -70,6 +70,14 @@
     </div>
     
     @yield('errorMensages')
+
+    <main>
+        @if(session('msgUpdate'))
+            <div class=" mb-3 w-50 mx-auto alert alert-success">
+                {{ session('msgUpdate') }}
+            </div>
+        @endif
+    </main>
   
     <main>
         @if(session('msgDelete'))
