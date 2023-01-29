@@ -25,7 +25,7 @@ class FormValidatorRequest extends FormRequest
     {
         return [
             'nome' => 'required||max:110|min:3',
-            'telefone' => 'required||max:11|min:9',
+            'telefone' => 'required||max:9|min:9',
             'rua' => 'required||max:110|min:5',
             'cidade' => 'required||max:110|min:3',
             'estado' => 'required',

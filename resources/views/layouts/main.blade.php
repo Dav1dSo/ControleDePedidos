@@ -10,7 +10,7 @@
     <style>
 
         #display-font {
-            font-size: 20px;
+            font-size: 18px;
             color: white;
         }
         
@@ -18,7 +18,7 @@
             box-shadow: 2px 2px 20px 1px #696969;
             border-radius: 15px;
             border: none;
-            font-size: 20.2px;
+            font-size: 18.1px;
         }
 
         #endereco {
@@ -40,7 +40,16 @@
             background-color: #1C1C1C;
             color: white; 
         }
-    
+        #btnactions{
+            display: flex;
+        }    
+
+        #btnactions a{
+            margin-left: 8px;
+        }
+        #errorMessage {
+            margin-top: 5vh;
+        }
 </style>
 <body>
 
@@ -61,6 +70,14 @@
     </div>
     
     @yield('errorMensages')
+  
+    <main>
+        @if(session('msgDelete'))
+            <div class="mb-3 w-50 mx-auto alert alert-warning">
+                {{ session('msgDelete') }}
+            </div>
+        @endif
+    <main>
 
     <main>
         @if(session('msg'))   

@@ -4,7 +4,7 @@
 
 @section('errorMensages')
   @if($errors->any())
-    <div  class="mb-3 w-50 mx-auto alert alert-danger" role="alert">
+    <div id="errorMessage" class="mb-3 w-50 mx-auto alert alert-danger" role="alert">
       <ul>
           @foreach($errors->all() as $error)
               <li> {{ $error }} </li>

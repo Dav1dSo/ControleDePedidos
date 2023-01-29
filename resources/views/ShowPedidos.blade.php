@@ -16,7 +16,7 @@
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">Espera</th>
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
             <th scope="col">Rua</th>
@@ -34,7 +34,7 @@
     @foreach($pedidos as $pedido)
   <tbody>
     <tr>
-      <th scope="row">{{ $pedido->id }}</th>
+      <td scope="row">{{ $pedido->id }}º</td>
       <td> {{$pedido->nome}} </td>
       <td> {{$pedido->telefone}} </td>
       <td> {{$pedido->rua}} </td>
@@ -46,7 +46,15 @@
       <td> {{date('d/m/Y', strtotime($pedido->data_pedido))}} </td>
       <td> {{$pedido->status}} </td>
       <td> {{$pedido->observacao}} </td>
-      <td> <a href="##">Editar</a> | <a href="#">Exluir</a> </td>
+      <td id="btnactions"> 
+        <form action="">
+          <a href="/editPedido{id}">Editar</a> 
+        </form> 
+        <form action="/deletePedido/{{ $pedido->id }}" method="POST">
+          @csrf
+          @method('DELETE')
+          <button type="submit" class="btn btn-danger" >Deletar</button>
+        </form>
     </tr>
   </tbody>
   @endforeach

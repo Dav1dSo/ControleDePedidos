@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('deleteMessage')
+  @if(session('deleteMessage'))
+    <div>
+      {{ session('deleteMessage') }}
+    </div>
+    @endif
+@endsection
+
 @section('welcome')
   <div class="col-lg-8 my-3 mx-auto">
     <h1 class="display-3 text-center">Controle de pedidos</h1>
