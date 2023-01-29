@@ -9,7 +9,7 @@
   </div> 
 @endsection
 
-<div class=" col-lg-6 my-4 mx-auto alert alert-info" role="alert">
+<div id="registers" class=" col-lg-5 my-4 mx-auto alert alert-dark" role="alert">
     Foram encontrados {{ $quantidade }} registros!
 </div>
 
@@ -20,7 +20,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
             <th scope="col">Rua</th>
-            <th scope="col">Numero</th>
+            <th scope="col">Número</th>
             <th scope="col">Bairro</th>
             <th scope="col">Cidade</th>
             <th scope="col">Estado</th>

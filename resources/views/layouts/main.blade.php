@@ -8,10 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
     <style>
+
         #display-font {
             font-size: 20px;
             color: white;
         }
+        
         #display-font:hover{
             box-shadow: 2px 2px 20px 1px #696969;
             border-radius: 15px;
@@ -29,14 +31,16 @@
         }
 
         #table{
-            width: 85vw;
+            width: 82vw;
             margin: auto;
+            box-shadow: 2px 2px 25px 2px #808080;
         }
 
         #table th {
             background-color: #1C1C1C;
             color: white; 
         }
+    
 </style>
 <body>
 
