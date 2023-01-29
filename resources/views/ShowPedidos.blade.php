@@ -28,6 +28,7 @@
             <th scope="col">Data pedido</th>
             <th scope="col">Status</th>
             <th scope="col">Observação</th>
+            <th scope="col">Opções</th>
         </tr>
     </thead>
     @foreach($pedidos as $pedido)
@@ -42,9 +43,10 @@
       <td> {{$pedido->cidade}} </td>
       <td> {{$pedido->estado}} </td>
       <td> {{$pedido->valor}} </td>
-      <td> {{$pedido->data_pedido}} </td>
+      <td> {{date('d/m/Y', strtotime($pedido->data_pedido))}} </td>
       <td> {{$pedido->status}} </td>
       <td> {{$pedido->observacao}} </td>
+      <td> <a href="##">Editar</a> | <a href="#">Exluir</a> </td>
     </tr>
   </tbody>
   @endforeach
