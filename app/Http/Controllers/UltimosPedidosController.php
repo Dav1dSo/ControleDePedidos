@@ -25,4 +25,4 @@ class UltimosPedidosController extends Controller
         
         return view('UltimosPedidos', ['ultimosMeses' => $ultimosMeses]);
     }
-}
+}  
