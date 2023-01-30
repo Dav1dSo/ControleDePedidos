@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use \Carbon\Carbon;
 
 class UltimosPedidosController extends Controller
 {
@@ -12,9 +13,8 @@ class UltimosPedidosController extends Controller
         // Seleciona data atual
         $datenow = \Carbon\Carbon::now();
 
-
         // 6 meses atras
-        $dataInicio = date('2022-10-28');
+        $dataInicio = Carbon::now()->sub('6 months');
 
         $ultimosMeses = DB::table('pedidos')
         ->selectRaw(
@@ -23,6 +23,6 @@ class UltimosPedidosController extends Controller
 
 
         
-        return view('UltimosPedidos', ['ultimosMeses' => $ultimosMeses   ]);
+        return view('UltimosPedidos', ['ultimosMeses' => $ultimosMeses]);
     }
 }
