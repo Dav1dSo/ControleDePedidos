@@ -98,6 +98,7 @@
     @yield('welcome')
     @yield('createpedido')
     @yield('showPedidos')
+    @yield('titleUltimosPedidos')
     @yield('select6meses')
 
 </body>
