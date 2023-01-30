@@ -10,6 +10,7 @@ use App\Http\Controllers\ShowPedidosController;
 use App\Http\Controllers\DeletePedidoController;
 use App\Http\Controllers\PrepareEditePedidoController;
 use App\Http\Controllers\UpdatePedidoController;
+use App\Http\Controllers\UltimosPedidosController;
 
 // Rotas
 Route::get('/', [HomeController::class, 'Home']);
@@ -19,3 +20,7 @@ Route::get('/showPedidos', [ShowPedidosController::class, 'ShowPedidos']);
 Route::delete('/deletePedido/{id}', [DeletePedidoController::class, 'DeletePedido']);
 Route::get('/editePedido/{id}', [PrepareEditePedidoController::class, 'PrepareEditePedido']);
 Route::put('/updatePedido/{id}', [UpdatePedidoController:: class, 'Updatepedido']);
+
+//Rotas select
+
+Route::get('/ultimosPedidos', [UltimosPedidosController::class, 'UltimosPedidos']);

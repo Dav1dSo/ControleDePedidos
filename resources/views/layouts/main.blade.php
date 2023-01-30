@@ -61,7 +61,7 @@
     <li type="none" id="display-font" class="p-3 nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtrar pedidos</a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Últimos 6 meses</a>
+            <a class="dropdown-item" href="/ultimosPedidos">Últimos 6 meses</a>
             <a class="dropdown-item" href="#">Pedidos com observação</a>
             <a class="dropdown-item" href="#">Pedidos abertos</a>
             <a class="dropdown-item" href="#">Pedidos fechados</a>
@@ -98,6 +98,7 @@
     @yield('welcome')
     @yield('createpedido')
     @yield('showPedidos')
+    @yield('select6meses')
 
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
