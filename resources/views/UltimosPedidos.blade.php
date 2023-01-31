@@ -9,8 +9,32 @@
 
 @section('select6meses')
 
+        @foreach($ids as $id => $value)
+        <!-- <table id="table" class="table table-bordered">
+                <thead class="thead-dark">
+                    <th scope="col">Espera</tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{ $value }} </td>
+                    </tr>
+                </tbody>
+            </table> -->
+        @endforeach <!-- Id -->
+        
         @foreach($nomes as $nome => $value)
-            {{ $value }}
+            <table id="table" class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{ $value }} </td>
+                    </tr>
+                </tbody>
+            </table>
         @endforeach <!-- nome -->
         <br>
         @foreach($telefones as $telefone => $value)

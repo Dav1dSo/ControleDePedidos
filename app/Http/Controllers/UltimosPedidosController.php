@@ -17,17 +17,13 @@ class UltimosPedidosController extends Controller
         // 6 meses atras
         $dataInicio = Carbon::now()->sub('6 months');
 
-        // $ultimosMeses = DB::table('pedidos')
-        // ->selectRaw(
-        //     'created_at, nome, telefone, rua, cidade, estado, numero, bairro, valor, data_pedido, status, observacao '
-        // )->whereBetween('data_pedido', [$dataInicio, $datenow] )->get();
-
         $ultimosMeses = DB::table('pedidos')
         ->selectRaw(' * ')->whereBetween('data_pedido', [$dataInicio, $datenow] )->get();
 
         $getParms = $ultimosMeses;
 
         // Seleciona atributos
+        $getValuesId = $getParms->pluck('id');
         $getValuesNome = $getParms->pluck('nome');
         $getValuesTelefone = $getParms->pluck('telefone');
         $getValuesRua = $getParms->pluck('rua');
@@ -41,6 +37,7 @@ class UltimosPedidosController extends Controller
         $getValuesObservacao = $getParms->pluck('observacao');
 
         // Seleciona valores dos atributos
+        $ids = $getValuesId;
         $nomes = $getValuesNome;
         $telefones = $getValuesTelefone;
         $ruas = $getValuesRua;
@@ -53,9 +50,9 @@ class UltimosPedidosController extends Controller
         $status = $getValuesStatus;
         $observacoes = $getValuesObservacao;
         
-        return view('UltimosPedidos', 
+        return view('Teste', 
         [
-            
+            'ids' => $ids,
             'nomes' => $nomes, 
             'telefones' => $telefones,
             'ruas' => $ruas,
