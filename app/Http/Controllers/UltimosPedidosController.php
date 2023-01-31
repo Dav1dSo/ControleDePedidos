@@ -50,7 +50,7 @@ class UltimosPedidosController extends Controller
         $status = $getValuesStatus;
         $observacoes = $getValuesObservacao;
         
-        return view('Teste', 
+        return view('teste2', 
         [
             'ids' => $ids,
             'nomes' => $nomes, 
@@ -63,7 +63,8 @@ class UltimosPedidosController extends Controller
             'estados' => $estados,
             'data_pedidos' => $data_pedidos,
             'status' => $status,
-            'observacoes' => $observacoes
+            'observacoes' => $observacoes,
+            'props' => $getParms
         
         ]);
     }

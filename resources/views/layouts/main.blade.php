@@ -26,9 +26,25 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
         main {
             margin-top: 40px;
         }
+
+        #table2{
+            display: flex;
+            flex-direction: row;
+            /* width: 66.14vw; */
+            flex-wrap: nowrap;
+            margin: auto;
+            box-shadow: 2px 2px 25px 2px #808080;
+        }
+
+        #table2 th {
+            background-color: #1C1C1C;
+            color: white;
+        }
+
 
         #table{
             width: 82vw;
@@ -40,6 +56,7 @@
             background-color: #1C1C1C;
             color: white; 
         }
+
         #btnactions{
             display: flex;
         }    
@@ -49,6 +66,11 @@
         }
         #errorMessage {
             margin-top: 5vh;
+        }
+        #obs{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 150vh;
         }
 </style>
 <body>
