@@ -47,7 +47,7 @@
       </tbody>
       <tbody>
       @foreach($ruas as $rua)
-      <tr>
+      <tr> 
         <th>Rua:</th>
         <td>{{ $rua }}</td>
       </tr>

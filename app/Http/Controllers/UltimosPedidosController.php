@@ -67,5 +67,5 @@ class UltimosPedidosController extends Controller
             'props' => $getParms
         
         ]);
-    }
+    }  
 }  
