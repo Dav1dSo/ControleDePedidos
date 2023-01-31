@@ -27,47 +27,24 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($ids as $id => $value)
+        @foreach($props as $prop)
         <tr>
-            <td scope="row">{{ $value }}º</td> 
+            <td scope="row">{{ $prop->id}}º</td> 
+            <td>{{ $prop->nome }}</td>
+            <td>{{ $prop->telefone }}</td>
+            <td>{{ $prop->rua }}</td>
+            <td>{{ $prop->numero }}</td>
+            <td>{{ $prop->bairro }}</td>
+            <td>{{ $prop->cidade }}</td>
+            <td>{{ $prop->estado }}</td>
+            <td>{{ $prop->valor }}</td>
+            <td>{{ $prop->data_pedido }}</td>
+            <td>{{ $prop->status }}</td>
+            <td>{{ $prop->observacao }}</td>
         </tr>
         @endforeach
-        
-        @foreach($nomes as $nome => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- nomes --> 
-        @foreach($telefones as $telefone => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- telefones -->
-        @foreach($ruas as $rua => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- ruas -->
-        @foreach($numeros as $numero => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- numero -->
-        @foreach($bairros as $bairro => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- bairros -->
-        @foreach($cidades as $cidade => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- cidade -->
-        @foreach($estados as $estado => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- status -->
-        @foreach($valores as $valor => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- valor -->
-        @foreach($data_pedidos as $pedidos => $value)
-            <td>{{date('d/m/Y', strtotime($value))}}</td>
-        @endforeach   <!-- data_pedido -->
-        @foreach($status as $estate => $value)
-            <td>{{ $value }}</td>
-        @endforeach   <!-- status -->
-        @foreach($observacoes as $observacao => $value)
-            <td>{{ $value }}</td>
-        @endforeach <!--  observacoes --> -->
-    </tr>
+
     </tbody>
 </table>
 
-@endsection
+@endsection    
