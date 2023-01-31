@@ -47,4 +47,4 @@
     </tbody>
 </table>
 
-@endsection
+@endsection    
