@@ -7,7 +7,7 @@
 
     <div class="form-floating">
         <form id="Select" action="/pedidoUes">
-            <select class=" form-select" id="floatingSelect" aria-label="Floating label select example">
+            <select name="Ue" class=" form-select" id="floatingSelect" aria-label="Floating label select example">
                 <option value="AC" >Acre</option>
                 <option value="AL" >Alagoas</option>
                 <option value="AP" >Amapá</option>
