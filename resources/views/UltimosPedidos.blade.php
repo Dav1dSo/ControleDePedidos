@@ -38,7 +38,7 @@
             <td>{{ $prop->cidade }}</td>
             <td>{{ $prop->estado }}</td>
             <td>{{ $prop->valor }}</td>
-            <td>{{ $prop->data_pedido }}</td>
+            <td> {{date('d/m/Y', strtotime($prop->data_pedido))}} </td>
             <td>{{ $prop->status }}</td>
             <td>{{ $prop->observacao }}</td>
         </tr>

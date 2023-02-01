@@ -31,20 +31,6 @@
             margin-top: 40px;
         }
 
-        #table2{
-            display: flex;
-            flex-direction: row;
-            /* width: 66.14vw; */
-            flex-wrap: nowrap;
-            margin: auto;
-            box-shadow: 2px 2px 25px 2px #808080;
-        }
-
-        #table2 th {
-            background-color: #1C1C1C;
-            color: white;
-        }
-
 
         #table{
             width: 82vw;
@@ -67,11 +53,21 @@
         #errorMessage {
             margin-top: 5vh;
         }
-        #obs{
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 150vh;
+
+        #Select select{
+            margin: auto;
+            max-width: 500px;
+            box-shadow: 2px 10px 25px 2px #808080;
         }
+
+        #Select button {
+            margin-top: 5vh;
+            margin-left: 30vw;
+            display flex;
+            text-align: center;
+        }
+
+
 </style>
 <body>
 
@@ -84,7 +80,7 @@
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtrar pedidos</a>
         <div class="dropdown-menu">
             <a class="dropdown-item" href="/ultimosPedidos">Últimos 6 meses</a>
-            <a class="dropdown-item" href="#">Pedidos com observação</a>
+            <a class="dropdown-item" href="/selectPedidoUes">Pedidos por estado</a>
             <a class="dropdown-item" href="#">Pedidos abertos</a>
             <a class="dropdown-item" href="#">Pedidos fechados</a>
         </div>
