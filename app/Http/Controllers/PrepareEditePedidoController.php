@@ -14,3 +14,4 @@ class PrepareEditePedidoController extends Controller
         return view('EditePedido', ['pedido' => $pedido]);
     }
 }
+ 

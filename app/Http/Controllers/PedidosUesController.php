@@ -22,5 +22,5 @@ class PedidosUesController extends Controller
 
         return view('UesPedidos', ['getParams' => $getParms, 'SelectUe' => $SelectUe, 'ue' => $ue])->with('msgSelectUe', 'Foram encontrados {$ue} no estado de {$SelectUe}!');
 
-    }
+    } 
 }

@@ -14,3 +14,4 @@ class DeletePedidoController extends Controller
         return redirect('/')->with('msgDelete', 'Pedido deletado com sucesso!');
     }
 }
+ 

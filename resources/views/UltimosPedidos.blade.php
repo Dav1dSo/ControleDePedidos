@@ -24,7 +24,7 @@
             <th scope="col">Data pedido</th>
             <th scope="col">Status</th>
             <th scope="col">Observação</th>
-        </tr>
+        </tr> 
     </thead>
     <tbody>
         @foreach($props as $prop)

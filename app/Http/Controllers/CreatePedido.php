@@ -10,3 +10,4 @@ class CreatePedido extends Controller
         return view('CreatePedido');
     }
 }
+ 

@@ -81,8 +81,8 @@
         <div class="dropdown-menu">
             <a class="dropdown-item" href="/ultimosPedidos">Últimos 6 meses</a>
             <a class="dropdown-item" href="/selectPedidoUes">Pedidos por estado</a>
-            <a class="dropdown-item" href="#">Pedidos abertos</a>
-            <a class="dropdown-item" href="#">Pedidos fechados</a>
+            <a class="dropdown-item" href="/pedidosAbertos">Pedidos abertos</a>
+            <a class="dropdown-item" href="/pedidosFechados">Pedidos fechados</a>
         </div>
     </li>
     </div>
@@ -116,9 +116,10 @@
     @yield('welcome')
     @yield('createpedido')
     @yield('showPedidos')
-    @yield('PedidosUes')
     @yield('titleUltimosPedidos')
     @yield('select6meses')
+    @yield('PedidosUes')
+    @yield('PedidosAbertos')
 
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

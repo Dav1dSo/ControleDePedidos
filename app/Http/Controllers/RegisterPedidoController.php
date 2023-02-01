@@ -26,7 +26,7 @@ class RegisterPedidoController extends Controller
         $pedido->data_pedido = $request->data_pedido;
         $pedido->status = $request->status;
         $pedido->observacao = $request->observacao;
-
+ 
         //salva dados de formulários
         $pedido->save();
 

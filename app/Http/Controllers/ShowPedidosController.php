@@ -18,3 +18,4 @@ class ShowPedidosController extends Controller
         return view('ShowPedidos', ['pedidos' => $pedidos], ['quantidade' => $i])->with('msgRegisters', 'Foram econtrados {$i}!');
     }
 }
+ 

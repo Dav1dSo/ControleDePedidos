@@ -25,3 +25,4 @@ class UltimosPedidosController extends Controller
         return view('UltimosPedidos', ['props' => $getParms]);    
     }  
 }  
+ 

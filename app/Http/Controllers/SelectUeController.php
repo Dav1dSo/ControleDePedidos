@@ -11,4 +11,4 @@ class SelectUeController extends Controller
 
     return view('SelectEstado');
     }
-}
+} 

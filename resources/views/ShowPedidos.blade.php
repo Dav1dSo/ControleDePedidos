@@ -32,7 +32,7 @@
         </tr>
     </thead>
     @foreach($pedidos as $pedido)
-  <tbody>
+  <tbody> 
     <tr>
       <td scope="row">{{ $pedido->id }}º</td>
       <td> {{$pedido->nome}} </td>
