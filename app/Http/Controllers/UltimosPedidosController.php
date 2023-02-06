@@ -20,9 +20,13 @@ class UltimosPedidosController extends Controller
         $ultimosMeses = DB::table('pedidos')
         ->selectRaw(' * ')->whereBetween('data_pedido', [$dataInicio, $datenow] )->get();
 
+        for($i=0; $i < count($ultimosMeses); $i++){
+            $i = $i;
+        }
+
         $getParms = $ultimosMeses;
         
-        return view('UltimosPedidos', ['props' => $getParms]);    
+        return view('UltimosPedidos', ['props' => $getParms, 'count' => $i]);    
     }  
 }  
  

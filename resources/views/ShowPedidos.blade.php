@@ -13,6 +13,8 @@
     Foram encontrados {{ $quantidade }} registros!
 </div>
 
+@if($quantidade > 0)
+
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">
         <tr>
@@ -58,5 +60,6 @@
   </tbody>
   @endforeach
 </table>
+@endif
 
 @endsection 

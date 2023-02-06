@@ -7,8 +7,14 @@
   </div>
 @endsection
 
+@section('count')
+<div id="registers" class=" col-lg-5 my-4 mx-auto alert alert-dark" role="alert">
+    Foram encontrados {{ $count }} registros!
+</div>
+@endsection
 
 @section('select6meses')
+@if($count > 0)
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">
         <tr>
@@ -46,5 +52,5 @@
 
     </tbody>
 </table>
-
+@endif
 @endsection    
