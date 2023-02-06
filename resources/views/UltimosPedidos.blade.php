@@ -17,7 +17,7 @@
 @if($count > 0)
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">
-        <tr>
+        <tr> 
             <th scope="col">Espera</th>
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>

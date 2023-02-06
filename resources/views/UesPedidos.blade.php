@@ -13,7 +13,7 @@
         Foram encontrados {{ $ue }} registros no estado do {{$SelectUe}} !
     </div>
     
-@if($ue > 0)
+@if($ue > 0) 
 
 <table id="table" class="table table-bordered">
     <thead class="thead-dark">

@@ -11,7 +11,7 @@
 
 <div id="registers" class=" col-lg-5 my-4 mx-auto alert alert-dark" role="alert">
     Foram encontrados {{ $quantidade }} registros!
-</div>
+</div> 
 
 @if($quantidade > 0)
 

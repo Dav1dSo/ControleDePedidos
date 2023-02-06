@@ -111,7 +111,7 @@
                 {{ session('msg') }}
             </div>
         @endif
-    </main>
+    </main> 
 
     @yield('welcome')
     @yield('createpedido')
